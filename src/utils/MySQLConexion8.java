@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class MySQLConexion8 {
 	
-	private static String url="jdbc:mysql://node79774-gamestore.jelastic.saveincloud.net:3306/gamestore_bd";
+	private static String url="jdbc:mysql://localhost:3306/gamestore_bd";
 	private static String user="root";
-	private static String pass="6sR5pdDdlQ";
+	private static String pass="";
 	
 	public static Connection getConexion() {
 		Connection con = null;
@@ -19,7 +19,7 @@ public class MySQLConexion8 {
 		} catch (ClassNotFoundException e) {
 			System.out.println("Error >> Driver no Instalado!!" + e.getMessage());
 		} catch (SQLException e) {
-			System.out.println("Error >> de conexión con la BD " + e.getMessage());
+			System.out.println("Error >> de conexiÃ³n con la BD " + e.getMessage());
 		} catch (Exception e) {
 			System.out.println("Error >> general : " + e.getMessage());
 		}
